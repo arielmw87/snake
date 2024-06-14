@@ -7,8 +7,8 @@ extern "C"
 #endif
 
     //macros para facilitar manejo de bits
-    #define bit_set(SFR,BIT) SFR|=(1<<BIT)
-    #define bit_clear(SFR,BIT) SFR&=~(1<<BIT)
+    #define set_bit(SFR,BIT) SFR|=(1<<BIT)
+    #define clear_bit(SFR,BIT) SFR&=~(1<<BIT)
 
 
     /* esta funcion configura el timer0 para que de una irq cada 1mSeg*/
